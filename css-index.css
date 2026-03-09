@@ -1,0 +1,479 @@
+@charset "utf-8";
+	/* CSS Document */
+
+	@font-face{
+		font-family: font2;
+		src: url("../font/font2/Inter_18pt-SemiBold.woff2"),
+			 url("../font/font2/Inter_18pt-SemiBold.woff"),
+			 url("../font/font2/Inter_18pt-SemiBold.ttf");
+	}
+
+	@font-face{
+		font-family: font1;
+		src: url("../font/font1/SourceCodePro-VariableFont_wght.woff2"),
+			 url("../font/font1/SourceCodePro-VariableFont_wght.woff"),
+			 url("../font/font1/SourceCodePro-VariableFont_wght.ttf");
+
+	}
+
+	h5, h6, .title {
+	  font-family:  'font2'; 
+	}
+
+	p{
+		font-size: 13px;
+		
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	header {
+		text-align: center;
+		padding: 0 16px;
+		width: 100%;
+	}
+
+	 .home-page footer{
+		margin-bottom: 20px;
+		padding-top: 60px 
+	}
+
+	.header-inner {
+	  max-width: 1200px;
+	  margin: 0 auto;
+	  padding: 0 16px;
+	}
+
+	body {
+		font-family: 'font1' ;
+		background: #ffffff;
+		color: #222222;
+		line-height: 1.6;
+	}
+
+
+	.logo h1 {
+		font-size: 42px;
+		letter-spacing: 6px;
+		font-weight: 500;
+
+	}
+
+	.logo span {
+		font-size: 12px;
+		letter-spacing: 4px;
+		display: block;
+		margin-top: 5px;
+	}
+
+	.logo {
+	  text-align: center;
+		margin-top: 30px;
+		margin-bottom: 20px;	  
+	}
+
+	.main-logo {
+		width: 180px !important;
+		height: auto;
+	}
+
+
+	.home-page footer {
+		margin-top: 50px;			
+	}
+
+
+	nav {
+		
+		margin-top: 24px;
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		position: sticky;
+		top: 0;
+		background: #fff;
+		z-index: 9999;
+		
+		padding-top: 14px;
+		padding-bottom: 10px!important;
+	
+	}
+
+	nav a.active {
+		color: #cf2027;
+		
+	}
+
+	nav a {
+		text-decoration: none;
+		margin: 0 ;
+		cursor: pointer;
+		margin: 0 25px;
+		letter-spacing: 1px;
+		color: #111111;
+		letter-spacing: 2px;
+				
+	}
+
+	.col-12 h6{
+		font-size: 11px;
+	}
+
+	nav h5 a:hover{
+		color: #cf2027;
+
+	}
+	nav h5 a {
+		font-size: 12px;
+		
+	}
+	#bioinfo p {
+		margin-top: -12px;
+	}
+	.box{	
+		transition: 0.4s ease;
+		aspect-ratio: 1 / 1;     /* luôn vuông */
+		overflow: hidden;		
+	}
+
+	.box img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+    .home-page nav{
+			margin-top: 24px;
+		}
+
+	.title{
+		text-align: center;
+		margin-top: 20px;
+
+		transition: 0.3s ease;
+		font-size: 13px;
+	}
+.title {
+	letter-spacing: 1.2px;
+}
+
+	.title a {
+		text-decoration: none;
+		color: black;
+	}
+
+
+	[class*="col-"]:hover .box {
+	  transform: scale(1.02);
+	}
+
+
+	[class*="col-"]:hover .title {
+	  color: #cf2027;
+	}
+
+	footer{
+		text-align: center;
+
+
+		font-family: 'font2', sans-serif;
+	}
+	footer p {
+		font-size: 10px;		
+	}
+
+	.social {
+	  display: flex;
+	  justify-content: center;
+	  gap: 12px;	
+	}
+
+	.social a {
+	  text-decoration: none;
+	  color: #222222;  
+	}
+	.social a:hover {
+	  color: #cf2027;             
+	  transform: scale(1.05);
+
+	}
+
+	.map-section {
+		width: 100%;
+	}
+
+	.map-section iframe {
+		width: 100%;
+		border: 0;
+	}
+
+	#bio h5 {
+		margin-top: 120px;
+		margin-bottom: 40px;
+		color: #cf2027;
+		letter-spacing: 2px;
+		font-size: 26px;
+
+	}
+
+	/*=====ONLY M=====*/
+	@media (min-width:768px) and (max-width:991px){
+		#bio h5{
+			margin-top: 26px;
+			margin-bottom: 26px;
+			}
+		#bio {
+			margin-bottom: 10px;
+			margin-top: 70px;
+		}
+		.box{
+			width: 100%;
+			margin-top: 50px;
+
+		}
+
+		.title{
+			margin-top: 15px;
+		}
+		.about-page footer {
+		margin-top: 125px ;
+
+	}	
+		.map-section{
+
+			margin-top: -5px !important;
+		}
+		 nav {
+			margin-top: 10px;   /* chỉnh số này */
+			 margin-bottom: 50px;
+		}
+		
+	}
+
+		.social{
+			margin-top: -10px;
+		}
+
+
+	/*=====ONLY S=====*/
+	@media (min-width:576px) and (max-width:767px){
+		 #bio h5{
+			margin-top: 20px;
+			margin-bottom: 15px;
+		 }	
+		.home-page footer {
+		margin-top: -36px !important;
+		}
+		.box {
+			max-width: 100%;
+		}
+		
+		.title{
+			margin-bottom: 80px;
+		}
+
+		nav {
+			margin-top: 10px;   /* chỉnh số này */
+			margin-bottom: 100px;
+		}
+
+
+		.map-section{
+			margin-bottom: -250px;
+			margin-top: -5px;
+		}
+
+
+		.social{
+			margin-top: -10px;
+		}
+
+		.contact-page footer{
+			margin-top: 245px;
+		}
+		.about-page footer {
+		margin-top: 99px;
+
+	}
+		#bio h5{
+			padding-top: 60px;
+			margin-bottom: 30px;
+		}
+		#bio {
+			margin-bottom: 8px;
+			margin-top: 10px;
+		}
+
+	}
+	/*=====ONLY XS=====*/
+	@media (max-width:575px){
+
+		#bio h5{
+			margin-top: 20px;
+			margin-bottom: 15px;
+			}
+		
+		 .home-page footer {
+		margin-top: -26px !important;
+		}
+		.map-section{
+			margin-bottom: -250px;
+			margin-top: -10px;
+		}
+		.social{
+			margin-top: -10px;
+		}
+
+		.box {
+			max-width: 100%;			
+		}
+
+		.title{
+			margin-bottom: 60px;
+		}
+
+		.about-page footer {
+		margin-top: 95px;	
+		}
+		 nav {
+			margin-top: 5px;   
+			margin-bottom: 90px; 
+		}
+		#bio {
+			margin-bottom: 15px;
+			margin-top: 60px;
+		}
+		.contact-page footer{
+			margin-top: 246px;
+		}
+
+	}	
+
+
+	/*=====ONLY L=====*/
+	@media (min-width:992px) and (max-width:1199px){
+		#bio h5{
+			margin-top: 26px;
+			margin-bottom: 16px;	
+
+		}
+		
+
+		.about-page footer {
+		margin-top: 172px;		
+	}
+		.social{
+			margin-top: -10px;
+		}
+		#bio h5{
+			padding-top: 60px;
+			margin-bottom: 30px;
+		}
+		 nav {
+			margin-top: 10px;   /* chỉnh số này */
+			 margin-bottom: 50px;
+		}
+		#bio {
+			margin-bottom: 5px;
+			margin-top: 10px;
+		}
+		.box{
+		width: 100%;	
+			margin-top: 50px
+		}
+	}
+
+	@media (min-width: 1200px){
+		.about-page footer {
+		margin-top: 162px;
+		}
+		.map-section{
+
+			margin-top: -5px;
+		}
+
+		.col-12{
+			margin-top: 50px;
+		}
+
+		.about-page footer{
+			margin-top: 237px;
+		}
+		#bio {
+			margin-bottom: -40px;
+		}
+		.box{
+		width: 100%;	
+		}
+
+		.social{
+			margin-top: -10px;
+		}
+		 nav {
+			margin-top: 10px;   /* chỉnh số này */
+			 margin-bottom: 50px;
+			 gap:50px
+		}
+
+	}
+
+
+		html {
+		overflow-y: scroll;
+		scrollbar-gutter: stable;
+	}
+
+		
+/* ===== Highlight ảnh đang xem trong lightbox ===== */
+.lightbox-thumbs img {
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.lightbox-thumbs img.active {
+    opacity: 1;
+    border: 2px solid #cf2027;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
